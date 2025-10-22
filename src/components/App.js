@@ -7,7 +7,6 @@ import { increment,decrement } from "../redux/counterSlice";
 
 const App = () => {
   const {counter} = useSelector((state)=>state.counter)
-  console.log(counter)
 
 
 const dispatch = useDispatch();
@@ -15,8 +14,8 @@ const dispatch = useDispatch();
     <div>
         {/* Do not remove the main div */}
         <h1>{counter}</h1>
-        <button onClick={()=>{dispatch(increment())}} id="increment">Increment</button>
-        <button onClick={()=>{dispatch(decrement())}} id="decrement">Decrement</button>
+        <button onClick={()=>{dispatch(increment())}} id="increment">increment</button>
+        <button onClick={()=>{dispatch(decrement())}} id="decrement">decrement</button>
     </div>
   
   )
